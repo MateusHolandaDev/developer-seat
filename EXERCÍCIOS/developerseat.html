@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="developerseat.css">
+    <title>Developer Seat</title>
+</head>
+
+<body>
+
+    <nav class="container-nav">
+
+        <div class="container-logo">
+            <img src="imagem/javascript (1).png" alt="">
+            <label for="">DEVELOPER SEAT</label>
+        </div>
+
+        <div class="container-navegation">
+            <a href="#">INÍCIO</a>
+            <a href="#">CURSOS</a>
+            <a href="#">SOBRE NÓS</a>
+        </div>
+
+        <div class="container-login">
+            <button id='login'>ENTRAR</button>
+        </div>
+
+    </nav>
+
+    <div class="loop">
+        <video preloader="auto" playsinline autoplay loop muted
+            src="https://ebaconline.com.br/upload/cms/AiENrVRadM6kcJKWjatMg.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <section class="container-section">
+
+
+        <div class="container-video"><iframe width="660" height="415" src="https://www.youtube.com/embed/RvcRxEeJqi8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+
+        <div class="container-texto">
+            <label for="" id="texto1">Aprenda a criar sites interativos, aplicativos para celulares e serviços de high
+                load usando a linguagem de programação mais popular do mundo. Vá do zero ao pro utilizando JavaScript e
+                seu ecossistema para trilhar uma carreira de sucesso como desenvolvedor.</label>
+        </div>
+
+    </section>
+
+    <form method="POST" action="treinamento.html" name="fale" id="form1" onsubmit="return validacao();">
+        
+        <div class="container-items">
+            <label>ACESSAR CONTA</label>
+            <input type="email" name="email" id="email" value="" placeholder="Nome@email.com" onfocus="if(this.placeholder == 'Nome@email.com'){this.placeholder = ''}" onblur="if(this.placeholder == ''){this.placeholder = 'Nome@email.com'}">
+
+            <input type="password" name="senha" id="senha" value="" placeholder="Digite sua senha" onfocus="if(this.placeholder == 'Digite sua senha'){this.placeholder = ''}" onblur="if(this.placeholder == ''){this.placeholder = 'Digite sua senha'}">
+            <input type="submit" value="ENTRAR">
+        </div>
+    </form>
+
+    <script src="developerseat.js"></script>
+
+</body>
+
+</html>
